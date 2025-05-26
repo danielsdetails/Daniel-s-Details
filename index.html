@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel's Details</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5976/5976299.png" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Daniel's Details</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#book">Book Now</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Welcome to Daniel's Details</h1>
+      <p>Attention to detail and quality service for your car.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Interior & Exterior Detailing</li>
+        <li>Paint Correction (Coming Soon)</li>
+        <li>Ceramic Coatings (Coming Soon)</li>
+        <li>Window Tinting (Coming Soon)</li>
+      </ul>
+    </section>
+
+    <section id="book" class="section">
+      <h2>Book Your Appointment</h2>
+      <p>Booking calendar coming soon. For now, please contact us directly below.</p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Daniel's Details</h2>
+      <p>
+        At Daniel's Details, we treat every car like our own. Our core values are consistency,
+        attention to detail, and delivering quality work every time.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Phone: (123) 456-7890</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Daniel's Details</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
